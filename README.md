@@ -10,11 +10,11 @@ API for Markdown Notes app.
 If you are building with .NET CLI tools then you can also use the following command:
 
 ```bash
-dotnet add package ColoradoBoothSDK --version 1.0.1
+dotnet add package ColoradoBoothSDK --version 1.0.2
 ```
 
 You can also view the package at:
-https://www.nuget.org/packages/ColoradoBoothSDK/1.0.1
+https://www.nuget.org/packages/ColoradoBoothSDK/1.0.2
 
 ## Test the SDK
 
@@ -22,7 +22,7 @@ The generated SDK also contain one or more Tests, which are contained in the Tes
 
 ## Initialize the API Client
 
-**_Note:_** Documentation for the client can be found [here.](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/client.md)
+**_Note:_** Documentation for the client can be found [here.](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/client.md)
 
 The following parameters are configurable for the API Client:
 
@@ -31,16 +31,16 @@ The following parameters are configurable for the API Client:
 | AccessToken2 | `string` |  |
 | Port | `string` | *Default*: `"80"` |
 | Suites | `Models.SuiteCodeEnum` | *Default*: `SuiteCodeEnum.Hearts` |
-| Environment | [`Environment`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/README.md#environments) | The API environment. <br> **Default: `Environment.Testing`** |
+| Environment | [`Environment`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/README.md#environments) | The API environment. <br> **Default: `Environment.Testing`** |
 | Timeout | `TimeSpan` | Http client timeout.<br>*Default*: `TimeSpan.FromSeconds(100)` |
-| HttpClientConfiguration | [`Action<HttpClientConfiguration.Builder>`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/http-client-configuration-builder.md) | Action delegate that configures the HTTP client by using the HttpClientConfiguration.Builder for customizing API call settings.<br>*Default*: `new HttpClient()` |
-| BasicAuthCredentials | [`BasicAuthCredentials`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/auth/basic-authentication.md) | The Credentials Setter for Basic Authentication |
-| ApiKeyCredentials | [`ApiKeyCredentials`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/auth/custom-query-parameter.md) | The Credentials Setter for Custom Query Parameter |
-| ApiHeaderCredentials | [`ApiHeaderCredentials`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/auth/custom-header-signature.md) | The Credentials Setter for Custom Header Signature |
-| OAuthCCGCredentials | [`OAuthCCGCredentials`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/auth/oauth-2-client-credentials-grant.md) | The Credentials Setter for OAuth 2 Client Credentials Grant |
-| OAuthACGCredentials | [`OAuthACGCredentials`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/auth/oauth-2-authorization-code-grant.md) | The Credentials Setter for OAuth 2 Authorization Code Grant |
-| OAuthROPCGCredentials | [`OAuthROPCGCredentials`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/auth/oauth-2-resource-owner-credentials-grant.md) | The Credentials Setter for OAuth 2 Resource Owner Credentials Grant |
-| OAuthBearerTokenCredentials | [`OAuthBearerTokenCredentials`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/auth/oauth-2-bearer-token.md) | The Credentials Setter for OAuth 2 Bearer token |
+| HttpClientConfiguration | [`Action<HttpClientConfiguration.Builder>`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/http-client-configuration-builder.md) | Action delegate that configures the HTTP client by using the HttpClientConfiguration.Builder for customizing API call settings.<br>*Default*: `new HttpClient()` |
+| BasicAuthCredentials | [`BasicAuthCredentials`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/auth/basic-authentication.md) | The Credentials Setter for Basic Authentication |
+| ApiKeyCredentials | [`ApiKeyCredentials`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/auth/custom-query-parameter.md) | The Credentials Setter for Custom Query Parameter |
+| ApiHeaderCredentials | [`ApiHeaderCredentials`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/auth/custom-header-signature.md) | The Credentials Setter for Custom Header Signature |
+| OAuthCCGCredentials | [`OAuthCCGCredentials`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/auth/oauth-2-client-credentials-grant.md) | The Credentials Setter for OAuth 2 Client Credentials Grant |
+| OAuthACGCredentials | [`OAuthACGCredentials`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/auth/oauth-2-authorization-code-grant.md) | The Credentials Setter for OAuth 2 Authorization Code Grant |
+| OAuthROPCGCredentials | [`OAuthROPCGCredentials`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/auth/oauth-2-resource-owner-credentials-grant.md) | The Credentials Setter for OAuth 2 Resource Owner Credentials Grant |
+| OAuthBearerTokenCredentials | [`OAuthBearerTokenCredentials`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/auth/oauth-2-bearer-token.md) | The Credentials Setter for OAuth 2 Bearer token |
 
 The API client can be initialized as follows:
 
@@ -132,7 +132,7 @@ var client = MultiAuthSampleClient
     .FromConfiguration(configuration.GetSection("MultiAuthSample"));
 ```
 
-See the [Configuration-Based Initialization](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/configuration-based-initialization.md) section for details.
+See the [Configuration-Based Initialization](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/configuration-based-initialization.md) section for details.
 
 ## Environments
 
@@ -149,38 +149,38 @@ The SDK can be configured to use a different environment for making API calls. A
 
 This API uses the following authentication schemes.
 
-* [`basicAuth (Basic Authentication)`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/auth/basic-authentication.md)
-* [`apiKey (Custom Query Parameter)`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/auth/custom-query-parameter.md)
-* [`apiHeader (Custom Header Signature)`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/auth/custom-header-signature.md)
-* [`OAuthCCG (OAuth 2 Client Credentials Grant)`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/auth/oauth-2-client-credentials-grant.md)
-* [`OAuthACG (OAuth 2 Authorization Code Grant)`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/auth/oauth-2-authorization-code-grant.md)
-* [`OAuthROPCG (OAuth 2 Resource Owner Credentials Grant)`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/auth/oauth-2-resource-owner-credentials-grant.md)
-* [`OAuthBearerToken (OAuth 2 Bearer token)`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/auth/oauth-2-bearer-token.md)
+* [`basicAuth (Basic Authentication)`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/auth/basic-authentication.md)
+* [`apiKey (Custom Query Parameter)`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/auth/custom-query-parameter.md)
+* [`apiHeader (Custom Header Signature)`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/auth/custom-header-signature.md)
+* [`OAuthCCG (OAuth 2 Client Credentials Grant)`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/auth/oauth-2-client-credentials-grant.md)
+* [`OAuthACG (OAuth 2 Authorization Code Grant)`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/auth/oauth-2-authorization-code-grant.md)
+* [`OAuthROPCG (OAuth 2 Resource Owner Credentials Grant)`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/auth/oauth-2-resource-owner-credentials-grant.md)
+* [`OAuthBearerToken (OAuth 2 Bearer token)`](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/auth/oauth-2-bearer-token.md)
 * `CustomAuth (Custom Authentication)`
 
 ## List of APIs
 
-* [Authentication](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/controllers/authentication.md)
+* [Authentication](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/controllers/authentication.md)
 
 ## SDK Infrastructure
 
 ### Configuration
 
-* [Configuration-Based Initialization](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/configuration-based-initialization.md)
-* [HttpClientConfiguration](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/http-client-configuration.md)
-* [HttpClientConfigurationBuilder](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/http-client-configuration-builder.md)
-* [ProxyConfigurationBuilder](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/proxy-configuration-builder.md)
+* [Configuration-Based Initialization](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/configuration-based-initialization.md)
+* [HttpClientConfiguration](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/http-client-configuration.md)
+* [HttpClientConfigurationBuilder](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/http-client-configuration-builder.md)
+* [ProxyConfigurationBuilder](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/proxy-configuration-builder.md)
 
 ### HTTP
 
-* [HttpCallback](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/http-callback.md)
-* [HttpContext](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/http-context.md)
-* [HttpRequest](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/http-request.md)
-* [HttpResponse](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/http-response.md)
-* [HttpStringResponse](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/http-string-response.md)
+* [HttpCallback](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/http-callback.md)
+* [HttpContext](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/http-context.md)
+* [HttpRequest](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/http-request.md)
+* [HttpResponse](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/http-response.md)
+* [HttpStringResponse](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/http-string-response.md)
 
 ### Utilities
 
-* [ApiException](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/api-exception.md)
-* [ApiHelper](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.1/doc/api-helper.md)
+* [ApiException](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/api-exception.md)
+* [ApiHelper](https://www.github.com/ZahraN444/colorado-booth-dotnet-sdk/tree/1.0.2/doc/api-helper.md)
 
